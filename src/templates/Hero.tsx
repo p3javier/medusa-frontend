@@ -7,20 +7,23 @@ import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
+const LinkElem = ({ children }: { children: JSX.Element }) => {
+  return <li className="border p-1 rounded">{children}</li>;
+};
 const Hero = () => (
-  <Background color="bg-gray-100">
+  <Background color="bg-violet-900">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
-        <li>
+        <LinkElem>
           <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            <a>GitHub</a>
+            <a>Registrarse</a>
           </Link>
-        </li>
-        <li>
+        </LinkElem>
+        <LinkElem>
           <Link href="/">
-            <a>Sign in</a>
+            <a>Acceder</a>
           </Link>
-        </li>
+        </LinkElem>
       </NavbarTwoColumns>
     </Section>
 
@@ -28,15 +31,15 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
+            {'La nueva forma de\n'}
+            <span className="text-primary-500">organizar tu despedida</span>
           </>
         }
-        description="The easiest way to build a React landing page in seconds."
+        description="La forma más sencilla y rápida de organizar tu despedida de soltero/a"
         button={
           <Link href="https://creativedesignsguru.com/category/nextjs/">
             <a>
-              <Button xl>Download Your Free Theme</Button>
+              <Button xl>Reserva y obten un descuento</Button>
             </a>
           </Link>
         }

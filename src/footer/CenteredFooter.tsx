@@ -10,7 +10,7 @@ type ICenteredFooterProps = {
 };
 
 const CenteredFooter = (props: ICenteredFooterProps) => (
-  <div className="text-center">
+  <div className="text-center text-primary-100">
     {props.logo}
 
     <nav>
