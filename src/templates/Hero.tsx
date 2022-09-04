@@ -16,12 +16,12 @@ const Hero = () => (
       <NavbarTwoColumns logo={<Logo xl />}>
         <LinkElem>
           <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            <a>Registrarse</a>
+            <a className="text-violet-200">Registrarse</a>
           </Link>
         </LinkElem>
         <LinkElem>
           <Link href="/">
-            <a>Acceder</a>
+            <a className="text-violet-200">Acceder</a>
           </Link>
         </LinkElem>
       </NavbarTwoColumns>

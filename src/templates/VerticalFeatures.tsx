@@ -3,25 +3,25 @@ import { Section } from '../layout/Section';
 
 const VerticalFeatures = () => (
   <Section
-    title="Your title here"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at."
+    title="Medusa Events"
+    description="Una sencilla app con la que podrás crear el pack ideal de eventos para tu proxima despedida"
   >
     <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+      title="Salas de Fiesta"
+      description="Encuentra las mejores salas de fiesta con espectaculos incluidos."
       image="/assets/images/feature.svg"
       imageAlt="First feature alt text"
     />
     <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+      title="Eventos al aire libre"
+      description="Escalada, paintball, karting y muchos más tipos de eventos diurnos son también una gran opción para una despedida."
       image="/assets/images/feature2.svg"
       imageAlt="Second feature alt text"
       reverse
     />
     <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+      title="Limusinas"
+      description="¿Que mejor que darse un paseo en limusina por la ciudad antes de salir de fiesta?"
       image="/assets/images/feature3.svg"
       imageAlt="Third feature alt text"
     />
