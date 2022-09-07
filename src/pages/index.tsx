@@ -3,7 +3,10 @@ import { useEffect } from 'react';
 import { Analytics, getAnalytics, logEvent } from 'firebase/analytics';
 import { initializeApp } from 'firebase/app';
 
+import { Banner } from '../templates/Banner';
 import { Base } from '../templates/Base';
+import { Hero } from '../templates/Hero';
+import { VerticalFeatures } from '../templates/VerticalFeatures';
 // Import the functions you need from the SDKs you need
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -35,7 +38,13 @@ const Index = () => {
   useEffect(() => {
     logEvent(analytics, 'landing_page_loaded');
   });
-  return <Base />;
+  return (
+    <Base>
+      <Hero />
+      <VerticalFeatures />
+      <Banner />
+    </Base>
+  );
 };
 
 export default Index;

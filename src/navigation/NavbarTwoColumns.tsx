@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 type INavbarProps = {
   logo: ReactNode;
-  children: ReactNode;
+  children?: ReactNode;
 };
 
 const NavbarTwoColumns = (props: INavbarProps) => (
