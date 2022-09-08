@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-import { Button } from '../button/Button';
 import { Background } from '../components/background/Background';
+import { Button } from '../components/button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';

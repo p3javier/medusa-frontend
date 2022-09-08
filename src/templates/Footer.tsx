@@ -62,7 +62,7 @@ const Footer = () => (
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/sobre-nosotros">
             <a className={CLEAR_TEXT}>Sobre Nosotros</a>
           </Link>
         </li>
@@ -72,7 +72,7 @@ const Footer = () => (
           </Link>
         </li>
         <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
+          <Link href="/politicas-privacidad">
             <a className={CLEAR_TEXT}>Políticas de Privacidad & Cookies</a>
           </Link>
         </li>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { Button } from '../button/Button';
+import { Button } from '../components/button/Button';
 import { CTABanner } from '../cta/CTABanner';
 import { Section } from '../layout/Section';
 

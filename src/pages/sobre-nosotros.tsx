@@ -1,11 +1,7 @@
 import React from 'react';
 
-import { Background } from '../components/background/Background';
 import { Typography } from '../components/typography/Typography';
-import { Section } from '../layout/Section';
-import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
-import { Base } from '../templates/Base';
-import { Logo } from '../templates/Logo';
+import InfoPage from '../templates/InfoPage';
 
 const TITLE = 'Sobre Nosotros';
 
@@ -17,11 +13,13 @@ de soltero y soltera.`;
 const Body = () => (
   <>
     <Typography>{INTRO_TEXT}</Typography>
+    <br />
     <Typography>
       En base a ese vacio competitivo decidimos montar una plataforma online que
       conectase a proveedores de servicios con clientes interesados en organizar
       un evento.
     </Typography>
+    <br />
     <Typography>
       Actualmente estamos centrados en el nicho de las despedidas pero con
       intención de expandir la plantilla y la oferta de servicios a cualquier
@@ -29,17 +27,11 @@ const Body = () => (
     </Typography>
   </>
 );
+
 const SobreNosotros = () => (
-  <Base metaTitle={TITLE} description={INTRO_TEXT}>
-    <Background color="bg-violet-900">
-      <Section yPadding="py-6">
-        <NavbarTwoColumns logo={<Logo xl />} />
-      </Section>
-    </Background>
-    <Section title={TITLE}>
-      <Body />
-    </Section>
-  </Base>
+  <InfoPage title={TITLE} description={INTRO_TEXT}>
+    <Body />
+  </InfoPage>
 );
 
 export default SobreNosotros;
