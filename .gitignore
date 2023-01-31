@@ -19,6 +19,7 @@
 .DS_Store
 *.pem
 Thumbs.db
+/.history
 
 # debug
 npm-debug.log*
