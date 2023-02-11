@@ -14,7 +14,7 @@ const Button = (props: IButtonProps) => {
   });
 
   return (
-    <div className={btnClass}>
+    <button type="submit" className={btnClass}>
       {props.children}
 
       <style jsx>
@@ -40,7 +40,7 @@ const Button = (props: IButtonProps) => {
           }
         `}
       </style>
-    </div>
+    </button>
   );
 };
 
