@@ -34,3 +34,9 @@ local
 
 # vercel
 .vercel
+
+#yarn
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
