@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
 
+import { Footer } from './Footer';
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
-import { Footer } from './Footer';
 
 type BaseProps = {
   children: ReactNode;
@@ -16,7 +16,7 @@ const Base = (props: BaseProps) => {
     description = AppConfig.description,
   } = props;
   return (
-    <div className="antialiased text-gray-400 bg-slate-800">
+    <div className="antialiased text-gray-400 bg-slate-800 min-h-screen flex flex-col">
       <Meta title={metaTitle} description={description} />
       {children}
       <Footer />
