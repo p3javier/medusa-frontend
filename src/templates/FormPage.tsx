@@ -1,7 +1,8 @@
+/* eslint-disable import/order */
 import React, { ReactNode } from 'react';
 
-import { Background } from '../components/background/Background';
 import { Base } from './Base';
+import { Background } from '../components/background/Background';
 
 type FormPageProps = {
   children: ReactNode;

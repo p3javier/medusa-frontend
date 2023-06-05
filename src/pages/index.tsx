@@ -14,6 +14,8 @@ import { VerticalFeatures } from '../templates/VerticalFeatures';
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// eslint-disable-next-line no-console
+console.log('VITE_API_KEY', JSON.stringify(import.meta.env));
 const firebaseConfig = {
   apiKey: 'AIzaSyAyuuFLP6Q4DUDu9dqTj_M_5Gq7E2B3VXA',
   authDomain: 'medusa-events.firebaseapp.com',

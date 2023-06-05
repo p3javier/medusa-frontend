@@ -5,7 +5,7 @@ import client from '../../sanity/client';
 import { Footer } from '../../templates/Footer';
 
 const Post = ({ article }: { article: any }) => {
-  console.log(article);
+  // console.log(article);
   return (
     <>
       <Section title={article?.title}>

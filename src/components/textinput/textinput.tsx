@@ -1,8 +1,11 @@
+import { ChangeEventHandler } from 'react';
+
 type TextInputProps = {
   readonly label: string;
   readonly name: string;
   readonly placeholder?: string;
   readonly type?: 'text' | 'email' | 'tel';
+  onNameChange: ChangeEventHandler<HTMLInputElement>;
 };
 const TextInput = (props: TextInputProps) => (
   <div>
@@ -11,6 +14,7 @@ const TextInput = (props: TextInputProps) => (
     </label>
     <br />
     <input
+      onChange={props.onNameChange}
       name={props.name}
       className="text-black font-semibold indent-3 antialiased rounded-lg mt-2 placeholder:text-slate-400 placeholder:font-bold placeholder:indent-3"
       type={props.type || 'text'}

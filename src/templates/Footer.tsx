@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 import Link from 'next/link';
 
 import { Logo } from './Logo';

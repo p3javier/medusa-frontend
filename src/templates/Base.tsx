@@ -1,6 +1,7 @@
+/* eslint-disable import/order */
 import { ReactNode } from 'react';
-
 import { Footer } from './Footer';
+import { Header } from './Header';
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
 
@@ -18,6 +19,7 @@ const Base = (props: BaseProps) => {
   return (
     <div className="antialiased text-gray-400 bg-slate-800 min-h-screen flex flex-col">
       <Meta title={metaTitle} description={description} />
+      <Header />
       {children}
       <Footer />
     </div>

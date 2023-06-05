@@ -1,10 +1,11 @@
+/* eslint-disable import/order */
 import React, { ReactNode } from 'react';
 
+import { Base } from './Base';
+import { Logo } from './Logo';
 import { Background } from '../components/background/Background';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
-import { Base } from './Base';
-import { Logo } from './Logo';
 
 type InfoPageProps = {
   children: ReactNode;
