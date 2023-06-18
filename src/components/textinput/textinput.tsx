@@ -4,7 +4,7 @@ type TextInputProps = {
   readonly label: string;
   readonly name: string;
   readonly placeholder?: string;
-  readonly type?: 'text' | 'email' | 'tel';
+  readonly type?: HTMLInputElement['type'];
   onNameChange: ChangeEventHandler<HTMLInputElement>;
 };
 const TextInput = (props: TextInputProps) => (
