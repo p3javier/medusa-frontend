@@ -30,8 +30,10 @@ export default function Registro() {
         email,
         password
       );
+      // eslint-disable-next-line no-console
       console.log('user credentials', userCredential.user);
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error(error);
     }
   };
