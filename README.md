@@ -1,18 +1,23 @@
-# Landing Page Template built with Next JS 12+, Tailwind CSS 3 and TypeScript [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
+# Frontend project of Medusa Events App
 
-<p align="center">
-  <a href="https://creativedesignsguru.com/demo/nextjs-landing-page/"><img src="public/assets/images/nextjs-landing-page-banner.png?raw=true" alt="Next js starter banner"></a>
-</p>
+## Introduction
 
-🚀 Landing Page theme written in Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, VSCode, Netlify, PostCSS, Tailwind CSS.
+This is the frontend project for the [medusa.events](https://medusa.events) app.
+The purpose of this app is to be the customer side of all of Medusa Events content as well as the e-commerce engine for the app.
 
-Clone this project and use it to create your own [Next.js](https://nextjs.org) project. You can check a [Next js templates demo](https://creativedesignsguru.com/demo/nextjs-landing-page/).
+## Domain Model
 
-### DEMO
+WIP 🚧
 
-[![Nextjs Landing Page Template Screenshot](public/assets/images/nextjs-landing-page-screenshot.png?raw=true)](https://creativedesignsguru.com/demo/nextjs-landing-page/)
+## System Architecture
 
-Check out our [live demo](https://creativedesignsguru.com/demo/nextjs-landing-page/).
+WIP 🚧
+
+## Technologies Used
+
+- Next JS 12+
+- Tailwind CSS
+- TypeScript
 
 ### Features
 
@@ -40,7 +45,7 @@ Built-in feature from Next.js:
 - 💨 Live reload
 - ✅ Cache busting
 
-### Included Components
+## Included Components
 
 - Navbar
 - Hero
@@ -50,31 +55,18 @@ Built-in feature from Next.js:
 
 Find more components in our [premium NextJS themes](https://creativedesignsguru.com/category/nextjs/).
 
-### Philosophy
+## Philosophy
 
 - Minimal code
 - SEO-friendly
 - 🚀 Production-ready
 
-### Nextless.js SaaS Boilerplate
 
-Build your SaaS product faster with [React SaaS Boilerplate](https://nextlessjs.com).
-
-[![React SaaS Boilerplate Next.js](https://creativedesignsguru.com/assets/images/themes/next-js-saas-starter-kit.jpg)](https://nextlessjs.com)
-
-### Premium Themes
-
-| [Green Nextjs Landing Page Template](https://creativedesignsguru.com/landing-green-modern-nextjs-theme/) | [Purple Saas Nextjs Theme](https://creativedesignsguru.com/landing-purple-modern-react-theme/) |
-| --- | --- |
-| [![Green Nextjs Landing Page Template](https://creativedesignsguru.com/assets/images/themes/landing-green-modern-nextjs-theme-xs.png)](https://creativedesignsguru.com/landing-green-modern-nextjs-theme/) | [![Blue Landing Page Nextjs Theme](https://creativedesignsguru.com/assets/images/themes/landing-blue-modern-nextjs-theme-xs.png)](https://creativedesignsguru.com/landing-blue-modern-react-theme/) |
-
-Find more [Nextjs Templates](https://creativedesignsguru.com/category/nextjs/).
-
-### Requirements
+## Requirements
 
 - Node.js and npm
 
-### Getting started
+## Getting Started
 
 Run the following command on your local environment:
 
@@ -116,7 +108,11 @@ Open http://localhost:3000 with your favorite browser to see your project. For y
 └── tsconfig.json        # TypeScript configuration
 ```
 
-### Customization
+## Deployment Strategy
+
+Automatic deployments using Vercel. WIP 🚧
+
+## Customization
 
 You can easily configure the theme. Please change the following file:
 
@@ -135,7 +131,7 @@ Here is the layer:
 - use component blocks from `src/templates/*`
 - use atomic components from `src/*`
 
-### Deploy to production
+## Deploy to production
 
 You can see the results locally in production mode with:
 
@@ -154,11 +150,6 @@ npm run build-prod
 
 Now, your theme is ready to be deployed. All generated files are located at `out` folder, which you can deploy with any hosting service.
 
-### Deploy to Netlify
-
-Clone this repository on own GitHub account and deploy to Netlify:
-
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template)
 
 ### Deploy to Vercel
 
@@ -181,9 +172,3 @@ Everyone is welcome to contribute to this project. Feel free to open an issue if
 Licensed under the MIT License, Copyright © 2022
 
 See [LICENSE](LICENSE) for more information.
-
----
-
-Made with ♥ by [CreativeDesignsGuru](https://creativedesignsguru.com) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
-
-[![Sponsor Next JS Boilerplate](https://cdn.buymeacoffee.com/buttons/default-red.png)](https://www.buymeacoffee.com/ixartz)

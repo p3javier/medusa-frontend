@@ -1,11 +1,12 @@
+/* eslint-disable import/order */
 import Link from 'next/link';
 
+import { Logo } from './Logo';
 import { Background } from '../components/background/Background';
 import { Button } from '../components/button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
-import { Logo } from './Logo';
 
 const LinkElem = ({ children }: { children: JSX.Element }) => {
   return <li className="border p-1 rounded">{children}</li>;
