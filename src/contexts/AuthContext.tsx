@@ -8,7 +8,10 @@ const auth = getAuth(app);
 export const AuthContext = createContext(auth);
 
 const AuthContextProvider = (props: any) => {
-  connectAuthEmulator(auth, 'http://localhost:9099');
+  if (process.env.NODE_ENV === 'development') {
+    connectAuthEmulator(auth, 'http://localhost:9099');
+  }
+
   return (
     <AuthContext.Provider value={auth}>{props.children}</AuthContext.Provider>
   );
