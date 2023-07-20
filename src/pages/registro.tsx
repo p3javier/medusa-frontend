@@ -1,6 +1,10 @@
 import React, { useContext } from 'react';
 
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import {
+  createUserWithEmailAndPassword,
+  sendEmailVerification,
+  User,
+} from 'firebase/auth';
 import { useForm, SubmitHandler } from 'react-hook-form';
 
 import { Button } from '../components/button/Button';
@@ -20,6 +24,18 @@ type Inputs = {
 
 export default function Registro() {
   const auth = useContext(AuthContext);
+
+  /**
+   * Sends an email verification to the user.
+   */
+  const sendEmailAccountVerification = async (userData: User) => {
+    try {
+      await sendEmailVerification(userData);
+      window.location.replace('/registro-completado');
+    } catch (error) {
+      console.error(error);
+    }
+  };
   const createAccount = async (data: Inputs) => {
     const email = data.Email;
     const { password } = data;
@@ -32,6 +48,8 @@ export default function Registro() {
       );
       // eslint-disable-next-line no-console
       console.log('user credentials', userCredential.user);
+      const { user } = userCredential;
+      await sendEmailAccountVerification(user);
     } catch (error) {
       // eslint-disable-next-line no-console
       console.error(error);
