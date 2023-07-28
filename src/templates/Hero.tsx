@@ -21,7 +21,7 @@ const Hero = () => (
           </Link>
         </LinkElem>
         <LinkElem>
-          <Link href="/">
+          <Link href="/login">
             <a className="text-violet-200">Acceder</a>
           </Link>
         </LinkElem>
