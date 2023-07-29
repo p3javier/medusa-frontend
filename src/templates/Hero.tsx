@@ -7,24 +7,13 @@ import { Button } from '../components/button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
+import UserBox from '../userBox/UserBox';
 
-const LinkElem = ({ children }: { children: JSX.Element }) => {
-  return <li className="border p-1 rounded">{children}</li>;
-};
 const Hero = () => (
   <Background color="bg-violet-900">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
-        <LinkElem>
-          <Link href="/registro">
-            <a className="text-violet-200">Registrarse</a>
-          </Link>
-        </LinkElem>
-        <LinkElem>
-          <Link href="/login">
-            <a className="text-violet-200">Acceder</a>
-          </Link>
-        </LinkElem>
+        <UserBox />
       </NavbarTwoColumns>
     </Section>
 

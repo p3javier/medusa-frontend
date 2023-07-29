@@ -5,12 +5,13 @@ const DevBar = () => {
   return (
     <div>
       <p>{process.env.NODE_ENV} bar</p>
-      <p>
+      <div>
         LOGIN STATUS: <span>{user?.uid ? 'Logged' : 'Not Logged'}</span>
-      </p>
-      <p>
+      </div>
+      <div>
         NAME: <span>{user?.displayName}</span>
-      </p>
+      </div>
+      <div>VERIFIED?: {user?.emailVerified.toString()}</div>
     </div>
   );
 };

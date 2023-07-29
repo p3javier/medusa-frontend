@@ -1,3 +1,4 @@
+import UserContextProvider from '../contexts/UserContext';
 import { Banner } from '../templates/Banner';
 import { Base } from '../templates/Base';
 import { Hero } from '../templates/Hero';
@@ -5,11 +6,13 @@ import { VerticalFeatures } from '../templates/VerticalFeatures';
 
 const Index = () => {
   return (
-    <Base>
-      <Hero />
-      <VerticalFeatures />
-      <Banner />
-    </Base>
+    <UserContextProvider>
+      <Base>
+        <Hero />
+        <VerticalFeatures />
+        <Banner />
+      </Base>
+    </UserContextProvider>
   );
 };
 

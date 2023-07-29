@@ -4,7 +4,6 @@ import { Footer } from './Footer';
 import { Header } from './Header';
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
-import UserContextProvider from '../contexts/UserContext';
 import DevBar from '../devBar/DevBar';
 
 type BaseProps = {
@@ -21,11 +20,7 @@ const Base = (props: BaseProps) => {
   return (
     <div className="antialiased text-gray-400 bg-slate-800 min-h-screen flex flex-col">
       <Meta title={metaTitle} description={description} />
-      {process.env.NODE_ENV === 'development' ? (
-        <UserContextProvider>
-          <DevBar />
-        </UserContextProvider>
-      ) : null}
+      {process.env.NODE_ENV === 'development' ? <DevBar /> : null}
       <Header />
       {children}
       <Footer />
