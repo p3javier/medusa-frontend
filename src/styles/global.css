@@ -3,3 +3,11 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.catalog-background {
+  background-color: #4c1d95;
+  opacity: 0.8;
+  background-image:  radial-gradient(#a78bfa 1px, transparent 1px), radial-gradient(#a78bfa 1px, #4c1d95 1px);
+  background-size: 40px 40px;
+  background-position: 0 0,20px 20px;
+}

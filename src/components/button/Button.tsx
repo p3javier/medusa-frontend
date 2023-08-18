@@ -2,6 +2,7 @@ import className from 'classnames';
 
 type IButtonProps = {
   xl?: boolean;
+  xs?: boolean;
   children: string;
 };
 

@@ -41,6 +41,9 @@ module.exports = {
       lineHeight: {
         hero: '4.5rem',
       },
+      aspectRatio: {
+        '3/4': '3 / 4',
+      },
     },
   },
   variants: {},

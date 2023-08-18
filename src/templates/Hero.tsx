@@ -7,14 +7,11 @@ import { Button } from '../components/button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
-import UserBox from '../userBox/UserBox';
 
 const Hero = () => (
   <Background color="bg-violet-900">
     <Section yPadding="py-6">
-      <NavbarTwoColumns logo={<Logo xl />}>
-        <UserBox />
-      </NavbarTwoColumns>
+      <NavbarTwoColumns logo={<Logo xl />} />
     </Section>
 
     <Section yPadding="pt-20 pb-32">
@@ -27,7 +24,7 @@ const Hero = () => (
         }
         description="La forma más sencilla y rápida de organizar tu despedida de soltero/a"
         button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
+          <Link href="/catalogo">
             <a>
               <Button xl>Reserva y obten un descuento</Button>
             </a>

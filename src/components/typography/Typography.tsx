@@ -4,6 +4,8 @@ type TextAlign = 'start' | 'end' | 'justify' | 'right' | 'center' | 'left';
 
 type BackgroundProps = {
   variant?:
+    | 'card-heading'
+    | 'card-body'
     | 'body'
     | 'caption'
     | 'h1'
@@ -35,6 +37,12 @@ type TextSize =
 const createClass = (textSize: TextSize, color: string, textAlign: TextAlign) =>
   `text-${textSize} text-${color} text-${textAlign}`;
 
+const createCardBodyClass = (
+  textSize: TextSize,
+  color: string,
+  textAlign: TextAlign
+) => `text-${textSize} md:text-sm text-${color} text-${textAlign}`;
+
 export const Typography: (props: BackgroundProps) => JSX.Element = (props) => {
   const {
     children,
@@ -44,6 +52,10 @@ export const Typography: (props: BackgroundProps) => JSX.Element = (props) => {
   } = props;
 
   switch (variant) {
+    case 'card-body':
+      return (
+        <p className={createCardBodyClass('base', color, align)}>{children}</p>
+      );
     case 'body':
       return <p className={createClass('xl', color, align)}>{children}</p>;
     case 'h1':
@@ -58,10 +70,11 @@ export const Typography: (props: BackgroundProps) => JSX.Element = (props) => {
       return <h5 className={createClass('3xl', color, align)}>{children}</h5>;
     case 'h6':
       return <h6 className={createClass('2xl', color, align)}>{children}</h6>;
+    case 'card-heading':
+      return <h6 className={createClass('xl', color, align)}>{children}</h6>;
     default:
       throw new Error(
         "Something is worng, variant should default to 'body' always"
       );
   }
 };
-export default Typography;
