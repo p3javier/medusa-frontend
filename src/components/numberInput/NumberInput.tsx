@@ -4,10 +4,14 @@ const NumberInput = ({
   label,
   value,
   onChange,
+  min,
+  step,
 }: {
   label: string;
   value: number;
   onChange: any;
+  min?: number;
+  step?: number;
 }) => {
   return (
     <div className="mb-4">
@@ -16,6 +20,8 @@ const NumberInput = ({
       </label>
       <input
         type="number"
+        min={min}
+        step={step || 1}
         className="appearance-none border rounded w-full py-2 px-3 text-gray-700 text-lg leading-tight focus:outline-none focus:shadow-outline"
         value={value}
         onChange={onChange}
