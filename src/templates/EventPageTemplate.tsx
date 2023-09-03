@@ -6,6 +6,7 @@ import { Section } from '../layout/Section';
 import { EventRepo } from '../types';
 
 const EventPageTemplate = ({
+  _id,
   name,
   description,
   long_description,
@@ -25,7 +26,7 @@ const EventPageTemplate = ({
         </div>
       </Section>
       <Section>
-        <AddToCart />
+        <AddToCart eventId={_id} />
       </Section>
     </Base>
   );
