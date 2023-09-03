@@ -875,31 +875,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@portabletext/react@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "@portabletext/react@npm:3.0.4"
+"@portabletext/react@npm:^3.0.7":
+  version: 3.0.7
+  resolution: "@portabletext/react@npm:3.0.7"
   dependencies:
-    "@portabletext/toolkit": ^2.0.4
-    "@portabletext/types": ^2.0.5
+    "@portabletext/toolkit": ^2.0.8
+    "@portabletext/types": ^2.0.6
   peerDependencies:
     react: ^17 || ^18
-  checksum: 60eab4cd8cf4edfa52438cc839daedcf971bd2833864cbd98d89785bccc27d458100868094b73b89ecb2f9dc0ed3d5cf5c5cbcd9bc64188bd8014b07f029271e
+  checksum: 8c3f6a932e37e569ea4be1e98508804739840fc039cb3bbbafcdd3c1fa24ccdc84a24a32a30b0179238fab436fc8ed1d278315fd16ce204e723baf47c9f678c8
   languageName: node
   linkType: hard
 
-"@portabletext/toolkit@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@portabletext/toolkit@npm:2.0.4"
+"@portabletext/toolkit@npm:^2.0.8":
+  version: 2.0.8
+  resolution: "@portabletext/toolkit@npm:2.0.8"
   dependencies:
-    "@portabletext/types": ^2.0.5
-  checksum: bda57bf65fd0c073324d248448403138a507ef878571bf74e0d3177d675bb64837f352785a0894e0ec6d4071a056cbaaab558677a0ee19ba5388bf9bb98a89eb
+    "@portabletext/types": ^2.0.6
+  checksum: 91a0b4e4ed904bdb38ce17e19a412f2616600c4e6559f830c36e7e8a17c8ba54969026fedddf6f2e7a310f1875cfb77a6506d72538b3b994520941ea4cabfd86
   languageName: node
   linkType: hard
 
-"@portabletext/types@npm:^2.0.5":
-  version: 2.0.5
-  resolution: "@portabletext/types@npm:2.0.5"
-  checksum: 1cca85f63de261208687446f97ed5dfb954e063b76a2f8b104ac30982cf2cec4503a01b6fdf6918f5b44208ba46d8f0b6507c3badd798d2ecad7325031733881
+"@portabletext/types@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "@portabletext/types@npm:2.0.6"
+  checksum: c417cc8b575494317d8b45f6f6228d27c53ed57940cffdadfcfb82033ca097cf37a33495b5ce6b16786eb9980415fd85edb1d25124d420f76a86771764643ea3
   languageName: node
   linkType: hard
 
@@ -4638,7 +4638,7 @@ __metadata:
   dependencies:
     "@hookform/error-message": ^2.0.1
     "@next/bundle-analyzer": ^12.3.4
-    "@portabletext/react": ^3.0.4
+    "@portabletext/react": ^3.0.7
     "@sanity/client": ^6.4.0
     "@sanity/image-url": ^1.0.2
     "@types/node": ^17.0.13
@@ -4677,6 +4677,7 @@ __metadata:
     styled-jsx-plugin-postcss: ^4.0.1
     tailwindcss: ^3.0.17
     typescript: ^4.5.5
+    zustand: ^4.4.1
   languageName: unknown
   linkType: soft
 
@@ -7348,5 +7349,25 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: f77b3d8d00310def622123df93d4ee654fc6a0096182af8bd60679ddcdfb3474c56c6c7190817c84a2785648cdee9d721c0154eb45698c62176c322fb46fc700
+  languageName: node
+  linkType: hard
+
+"zustand@npm:^4.4.1":
+  version: 4.4.1
+  resolution: "zustand@npm:4.4.1"
+  dependencies:
+    use-sync-external-store: 1.2.0
+  peerDependencies:
+    "@types/react": ">=16.8"
+    immer: ">=9.0"
+    react: ">=16.8"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    immer:
+      optional: true
+    react:
+      optional: true
+  checksum: 80acd0fbf633782996642802c8692bbb80ae5c80a8dff4c501b88250acd5ccd468fbc6398bdce198475a25e3839c91385b81da921274f33ffb5c2d08c3eab400
   languageName: node
   linkType: hard
