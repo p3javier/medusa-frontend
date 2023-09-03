@@ -1,10 +1,13 @@
+import { ReactNode } from 'react';
+
 import className from 'classnames';
 
-type IButtonProps = {
+interface IButtonProps {
   xl?: boolean;
   xs?: boolean;
-  children: string;
-};
+  children: ReactNode;
+  onClick?: () => void;
+}
 
 const Button = (props: IButtonProps) => {
   const btnClass = className({
@@ -15,7 +18,11 @@ const Button = (props: IButtonProps) => {
   });
 
   return (
-    <button type="submit" className={btnClass}>
+    <button
+      type="submit"
+      className={btnClass}
+      onClick={() => props.onClick && props.onClick()}
+    >
       {props.children}
 
       <style jsx>

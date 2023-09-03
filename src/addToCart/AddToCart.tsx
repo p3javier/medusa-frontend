@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 
 import { Button } from '../components/button/Button';
 import { NumberInput } from '../components/numberInput/NumberInput';
+import { useCartStore } from '../store';
 
-const AddToCart = () => {
+const AddToCart = ({ eventId }: { eventId: string }) => {
   const [numberValue, setNumberValue] = useState(0);
 
   const handleNumberChange = (event: any) => {
     setNumberValue(event.target.value);
   };
+  const addEvent = useCartStore((state) => state.addEvent);
   return (
     <div>
       <NumberInput
@@ -16,7 +18,9 @@ const AddToCart = () => {
         value={numberValue}
         onChange={handleNumberChange}
       />
-      <Button xl>Añadir al carrito</Button>
+      <Button onClick={() => addEvent({ id: eventId, units: 1 })} xl>
+        Añadir al carrito
+      </Button>
     </div>
   );
 };
