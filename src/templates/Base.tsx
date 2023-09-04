@@ -1,7 +1,7 @@
 /* eslint-disable import/order */
 import { ReactNode } from 'react';
 import { Footer } from './Footer';
-import { Header } from './Header';
+import { Header } from '../header/Header';
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
 import DevBar from '../devBar/DevBar';
