@@ -10,7 +10,7 @@ import { Logo } from '../templates/Logo';
 const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false);
   return (
-    <div>
+    <div className="pt-4">
       <nav className="xl:flex hidden flex-row flex-nowrap gap-x-6 mx-20">
         <div className="pb-4 pt-5">
           <Logo xl />
