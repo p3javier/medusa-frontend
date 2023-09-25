@@ -38,7 +38,7 @@ export default function Contacto() {
     sendContactForm(data);
   if (errors) {
     // console.error('Error from component', errors);
-    alert('Faltan campos');
+    // alert('Faltan campos');
   }
   return (
     <Base>
