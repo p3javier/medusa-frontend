@@ -16,3 +16,11 @@ export const eventBySlugQuery = `
   'main_image': main_image.asset->url
 }
 `;
+
+export const cartEventsQuery = `
+*[_type == "event"] {
+  _id,
+  name,
+  price
+}
+`;

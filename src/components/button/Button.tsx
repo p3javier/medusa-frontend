@@ -5,6 +5,7 @@ import className from 'classnames';
 interface IButtonProps {
   xl?: boolean;
   xs?: boolean;
+  disabled?: boolean;
   children: ReactNode;
   onClick?: () => void;
 }
@@ -14,14 +15,15 @@ const Button = (props: IButtonProps) => {
     btn: true,
     'btn-xl': props.xl,
     'btn-base': !props.xl,
-    'btn-primary': true,
+    'btn-primary': !props.disabled,
+    disabled: props.disabled,
   });
 
   return (
     <button
       type="submit"
       className={btnClass}
-      onClick={() => props.onClick && props.onClick()}
+      onClick={() => props.onClick?.()}
     >
       {props.children}
 
@@ -45,6 +47,10 @@ const Button = (props: IButtonProps) => {
 
           .btn-primary:hover {
             @apply bg-primary-600;
+          }
+
+          .disabled {
+            @apply text-white bg-primary-200;
           }
         `}
       </style>

@@ -38,7 +38,7 @@ export default function Login() {
         Email,
         password
       );
-      console.log(userCredentials);
+
       const { emailVerified } = userCredentials.user;
 
       if (emailVerified) {
@@ -47,8 +47,6 @@ export default function Login() {
     } catch (error) {
       if (error && typeof error === 'object') {
         showLoginError(error);
-
-        console.error(JSON.stringify(error));
       }
     }
   };

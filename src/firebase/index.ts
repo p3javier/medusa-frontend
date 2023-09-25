@@ -1,4 +1,8 @@
 import { FirebaseApp, initializeApp } from 'firebase/app';
+import {
+  initializeAppCheck,
+  ReCaptchaEnterpriseProvider,
+} from 'firebase/app-check';
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -17,4 +21,20 @@ const firebaseConfig = {
 
 const app: FirebaseApp = initializeApp(firebaseConfig);
 
-export { app };
+// Create a ReCaptchaEnterpriseProvider instance using your reCAPTCHA Enterprise
+// site key and pass it to initializeAppCheck().
+if (!process.env.NEXT_PUBLIC_RECAPTCHA) {
+  throw new TypeError('process.env.NEXT_PUBLIC_RECAPTCHA must be defined');
+}
+// eslint-disable-next-line import/no-mutable-exports
+let appCheck;
+if (typeof document !== 'undefined') {
+  appCheck = initializeAppCheck(app, {
+    provider: new ReCaptchaEnterpriseProvider(
+      process.env.NEXT_PUBLIC_RECAPTCHA
+    ),
+    isTokenAutoRefreshEnabled: true, // Set to true to allow auto-refresh.
+  });
+}
+
+export { app, appCheck };

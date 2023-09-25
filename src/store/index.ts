@@ -1,10 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
 
-type EventCart = {
-  id: string;
-  units: number;
-};
+import { EventCart } from '../types';
 
 type State = {
   events: EventCart[];
@@ -12,6 +10,7 @@ type State = {
 
 type Action = {
   addEvent: (event: EventCart) => void;
+  clearEvents: () => void;
 };
 
 const haveSameId = (element: EventCart, event: EventCart) =>
@@ -35,7 +34,15 @@ const incrementFn = (event: EventCart, state: State) => {
   return { events: [...state.events, event] };
 };
 
-export const useCartStore = create<State & Action>((set) => ({
-  events: [],
-  addEvent: (event) => set((state) => incrementFn(event, state)),
-}));
+export const useCartStore = create(
+  persist<State & Action>(
+    (set) => ({
+      events: [],
+      addEvent: (event) => set((state) => incrementFn(event, state)),
+      clearEvents: () => set(() => ({ events: [] })),
+    }),
+    {
+      name: 'events-storage',
+    }
+  )
+);

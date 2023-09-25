@@ -16,7 +16,7 @@ const TextInput = (props: TextInputProps) => (
     <input
       onChange={props.onNameChange}
       name={props.name}
-      className="text-black font-semibold indent-3 antialiased rounded-lg mt-2 placeholder:text-slate-400 placeholder:font-bold placeholder:indent-3"
+      className="min-w-full text-black font-semibold indent-3 antialiased rounded-lg mt-2 placeholder:text-slate-400 placeholder:font-bold placeholder:indent-3"
       type={props.type || 'text'}
       placeholder={props.placeholder || ' '}
     />
